@@ -17,7 +17,7 @@ Evento exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologia
 
 <br>
 
-<a href ="https://nlw-10-world-of-cup-22.vercel.app/" target="_blank">
+<a href ="https://nlw-10-world-of-cup-22.vercel.app/" target="_blank" rel="noopener noreferrer">
 <p align="center">
  <img alt="calendário da Copa" src="./.github/Capa.jpg" width="50%">
 </p>
