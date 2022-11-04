@@ -18,7 +18,7 @@ Evento exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologia
 <br>
 
 <p align="center">
-  <img alt="Capa Calendário da Copa" src="./.github/Capa.jpg" width="100%">
+  <img alt="Capa Calendário da Copa" src="./.github/Capa.jpg" width="50%">
 </p>
 
 ## 🚀 Tecnologias
