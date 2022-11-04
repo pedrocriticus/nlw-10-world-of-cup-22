@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --card-color-primery: #F7DD43;
+    --card-color-secundary: #338AF3;
+    --border-color-primery: #746615;
+    --border-color-secundary: #338AF3;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: #121214;
+    background-image: url(./assets/bg.svg);
+    background-position-x: center;
+    background-position-y:-715px;
+}
+
+#app {
+    width: fit-content;
+    margin: 52px auto;
+}
+
+header {
+    margin-bottom: 63px;
+    text-align: center;
+}
+
+#cards {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.card {
+    padding: 32px 23px;
+    text-align: center;
+    background: #1D1C19;
+    border-bottom: 2px solid var(--card-color-primery);
+    border-radius: 6px;
+}
+
+.card h2{
+    padding: 8px 16px;
+    margin-inline: auto;
+    width: fit-content;
+    margin-bottom: 53px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    border: 1px solid var(--border-color-primery);
+    border-radius: 6px;
+
+    color: var(--card-color-primery);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 125%;
+
+    text-transform: uppercase;
+
+}
+
+.card h2 span {
+    color: #E1E1E6;
+    font-size: 14px;
+}
+
+.card ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    width: 270px;
+}
+
+.card ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card ul li img {
+    width: 50px;
+    height: 50px;
+}
+
+.card ul li + li {
+    padding-top: 24px;
+    margin-top: 24px;
+    border-top: 1px solid #323238;
+}
+
+.card ul li strong {
+    color: #E1E1E6;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 125%;
+}
+
+.card h2:hover,
+.card ul li strong:hover,
+.card ul li img:hover {
+    transform: scale(1.1);
+}
+
+.card h2,
+.card ul li strong,
+.card ul li img {
+    transition: transform 0.3s;
+}
+
+.card {
+    opacity: 0;
+    animation: appear 1s cubic-bezier(0,.54,1,-0.08) forwards;
+    
+}
+
+
+@keyframes appear {
+    0%{
+        /* transform: translateY(-50px); */
+        transform: scale3d(0.1, 0.1, 0.1);
+        
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@media (min-width:700px) {
+    #cards {
+        max-width: 670px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card{ 
+        border-bottom: 2px solid var(--card-color-secundary);
+    }
+
+    .card h2{ 
+        border: 1px solid var(--card-color-secundary);
+    }
+}
